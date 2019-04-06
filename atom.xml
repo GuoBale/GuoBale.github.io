@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-03T14:00:05.069Z</updated>
+  <updated>2019-04-06T17:49:08.777Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>超元启发式算法</title>
+    <link href="http://yoursite.com/2019/04/06/Hyper-heuristics/"/>
+    <id>http://yoursite.com/2019/04/06/Hyper-heuristics/</id>
+    <published>2019-04-06T01:43:10.000Z</published>
+    <updated>2019-04-06T17:49:08.777Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="超元启发式算法"><a href="#超元启发式算法" class="headerlink" title="超元启发式算法"></a>超元启发式算法</h2><p>超元启发式算法提供了某种高层策略（High-Level Strategy，HLS），通过操纵或管理一组低层启发式算法（Low-Level Heuristics, LLH），以获得新的启发式算法。这些新启发式算法则被运用于求解各类NP-难解问题。</p><h3 id="底层元启发式算法"><a href="#底层元启发式算法" class="headerlink" title="底层元启发式算法"></a>底层元启发式算法</h3><p>超元启发式算法是通过操作底层元启发式算法来构造新的解或提高解的质量，操作可以是选择原有的底层元启发式算法，也可以是构造新的元启发式算法。底层元启发式算法分为两种：构造式和摄动式。构造式是可以根据问题直接得到解的。摄动式是指需要输入初始解，算法根据初始解得到新的解。我们通常根据不同类别的问题来设计底层元启发式算法。通常我们用构造式元启发式算法来生成问题的初始解，初始解作为优化问题的开始。在群体算法中（例如，遗传算法），我们可以利用底层元启发式算法去生成初始种群，这样比随机生成的种群质量会好很多，有利于算法的收敛。摄动式算法通常用来提高先有解的质量的，通常是在原来解的附近进行搜索，由于摄动式算法的机制是进行局部搜索，所以摄动式算法是独立于具体问题的。</p><h3 id="超元启发式算法分类"><a href="#超元启发式算法分类" class="headerlink" title="超元启发式算法分类"></a>超元启发式算法分类</h3><p>超元启发式算法的操作是选择现有的底层元启发式算法或者生成新的元启发式算法，而底层元启发式算法又分为构造式和摄动式的，我们把超元启发式算法分为选择构造式、选择摄动式、生成构造式、生成摄动式。</p><ul><li>选择构造式超元启发式算法：每一个解都是通过选择一个底层的元启发式算法计算得到的。这类超元启发式算法主要的技术有：基于案例选择、局部搜索、群体算法、自适应算法、杂交方法。</li><li>选择摄动式超元启发式算法：对于现有的解选择摄动式元启发式算法来计算得到新的解，每一次选择可以是选择一个底层算法或者是多个。如果是只选择一个底层算法，那么超元启发式算法可以分为两部分，首先是选择一个底层的摄动式元启发式算法，通过算法得到新的解，然后判断新的解是否比原来的解优，从而判断是否选择这一个摄动式元启发式算法。如果是选择多个底层算法，我们可以利用群体算法去搜索底层元启发算法空间，这里我们的底层算法选择和解的优化在群体算法中一起进行了。</li><li>生成构造式超元启发式算法：对于不同的问题生成新的底层构造式元启发式算法。生成的元启发式算法是用来生成初始解的，后面会用其他方法去优化这些初始解。新的构造式元启发式算法的包括：现有的底层元启发式算法、元启发式算法的成分、问题的特征。这些成分由算术操作和条件操作组合在一起。</li><li>生成摄动式超元启发式算法：对不同的问题生成新的底层摄动式元启发式算法。新的摄动式元启发式算法的包括：现有的底层元启发式算法、元启发式算法的成分、问题的特征。这些成分由算术操作和条件操作组合在一起。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;超元启发式算法&quot;&gt;&lt;a href=&quot;#超元启发式算法&quot; class=&quot;headerlink&quot; title=&quot;超元启发式算法&quot;&gt;&lt;/a&gt;超元启发式算法&lt;/h2&gt;&lt;p&gt;超元启发式算法提供了某种高层策略（High-Level Strategy，HLS），通过操纵或管理一
+      
+    
+    </summary>
+    
+      <category term="组合优化" scheme="http://yoursite.com/categories/%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96/"/>
+    
+    
+      <category term="超元启发式算法" scheme="http://yoursite.com/tags/%E8%B6%85%E5%85%83%E5%90%AF%E5%8F%91%E5%BC%8F%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="组合优化" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>元启发式算法</title>
-    <link href="http://yoursite.com/2019/04/03/meta-heuristic%20algorithms/"/>
-    <id>http://yoursite.com/2019/04/03/meta-heuristic algorithms/</id>
-    <published>2019-04-03T14:00:05.053Z</published>
-    <updated>2019-04-03T14:00:05.069Z</updated>
+    <link href="http://yoursite.com/2019/04/04/meta-heuristic%20algorithms/"/>
+    <id>http://yoursite.com/2019/04/04/meta-heuristic algorithms/</id>
+    <published>2019-04-03T18:11:25.884Z</published>
+    <updated>2019-04-03T18:11:25.884Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
@@ -36,20 +63,6 @@
     
     
       <category term="组合优化" scheme="http://yoursite.com/tags/%E7%BB%84%E5%90%88%E4%BC%98%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>My New Post</title>
-    <link href="http://yoursite.com/2019/04/02/My-New-Post-1/"/>
-    <id>http://yoursite.com/2019/04/02/My-New-Post-1/</id>
-    <published>2019-04-02T14:43:10.000Z</published>
-    <updated>2019-04-02T14:43:10.257Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
     
   </entry>
   

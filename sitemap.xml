@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2019/04/03/meta-heuristic%20algorithms/</loc>
+    <loc>http://yoursite.com/2019/04/06/Hyper-heuristics/</loc>
     
-    <lastmod>2019-04-03T14:00:05.069Z</lastmod>
+    <lastmod>2019-04-06T17:49:08.777Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/04/04/meta-heuristic%20algorithms/</loc>
+    
+    <lastmod>2019-04-03T18:11:25.884Z</lastmod>
     
   </url>
   
@@ -26,13 +33,6 @@
     <loc>http://yoursite.com/categories/index.html</loc>
     
     <lastmod>2019-04-03T13:10:13.703Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/04/02/My-New-Post-1/</loc>
-    
-    <lastmod>2019-04-02T14:43:10.257Z</lastmod>
     
   </url>
   
