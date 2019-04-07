@@ -4,27 +4,13 @@
   
     
     <entry>
-      <title>选择构造式超元启发式算法</title>
+      <title></title>
       <link href="/2019/04/07/Selection-Constructive-Hyper-Heuristics/"/>
       <url>/2019/04/07/Selection-Constructive-Hyper-Heuristics/</url>
       
-        <content type="html"><![CDATA[<p>选择构造式超元启发式算法（简记为SCHH）：每一个解都是通过选择一个底层的元启发式算法计算得到的。这类超元启发式算法主要的技术有：基于案例选择、局部搜索、群体算法、自适应算法、杂交方法。</p><p>底层构造性元启发式算法（简记为LLCH）是用于构造问题的全部解或初始解。解决一个问题是从初始情况开始，然后经过一系列不同的状态直到终止状态或者得到满足要求的解。一个SCHH会选择LLCH用于目前问题状态然后得到问题的下一个状态，这些LLCH是依赖于具体问题的。下面给出SCHH的定义。</p><p><strong>定义:</strong> 给定一个问题$p$和由一些LLCH构成的集合\(L={L_0,L_1,\cdots,L_n})\，首先选择一些LLCH来构造问题\(p)\的一个解\(s)\，从这个初始状态出发，不断从\(L)\中选择LLCH作用于当前的状态\(s^,)\得到问题的下一个状态\(s^,)\，一直到终止状态\(s^{,,})\。</p><p>我们有不同的策略用于选择LLCH，例如：基于实例、局部搜索、群体算法、交叉算法、自适应方法等。</p><p><strong>SCHH伪代码</strong></p><pre><code class="bash">procedure SCHH(p,L)  initialize solution s to be empty    repeat      use technique T to select a LLCH \\(L_i)\\ from \\(L)\\      apply \\(L_i)\\ to extend the solution \\(s)\\    until solution \\(s)\\ is completely constructed    return \\(s)\\end procedure</code></pre><h2 id="基于实例（Case-Based-Reasoning）"><a href="#基于实例（Case-Based-Reasoning）" class="headerlink" title="基于实例（Case-Based Reasoning）"></a>基于实例（Case-Based Reasoning）</h2>]]></content>
+        <content type="html"><![CDATA[<p><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script></p><h2 id><a href="#" class="headerlink" title=" "></a> <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></h2><p>title: 选择构造式超元启发式算法<br>date: 2019-04-07 09:43:10<br>tags:</p><ul><li>超元启发式算法</li><li>组合优化<br>categories:</li><li>组合优化</li></ul><hr><p>选择构造式超元启发式算法（简记为SCHH）：每一个解都是通过选择一个底层的元启发式算法计算得到的。这类超元启发式算法主要的技术有：基于案例选择、局部搜索、群体算法、自适应算法、杂交方法。</p><p>底层构造性元启发式算法（简记为LLCH）是用于构造问题的全部解或初始解。解决一个问题是从初始情况开始，然后经过一系列不同的状态直到终止状态或者得到满足要求的解。一个SCHH会选择LLCH用于目前问题状态然后得到问题的下一个状态，这些LLCH是依赖于具体问题的。下面给出SCHH的定义。</p><p><strong>定义:</strong> 给定一个问题$p$和由一些LLCH构成的集合$L={L_0,L_1,\cdots,L_n}$，首先选择一些LLCH来构造问题p$的一个解$s$，从这个初始状态出发，不断从$L$中选择LLCH作用于当前的状态$s^,$得到问题的下一个状态$s^,$，一直到终止状态$s^{,,}$。</p><p>我们有不同的策略用于选择LLCH，例如：基于实例、局部搜索、群体算法、交叉算法、自适应方法等。</p><p><strong>SCHH伪代码</strong></p><pre><code class="bash">procedure SCHH(p,L)  initialize solution s to be empty    repeat      use technique T to select a LLCH $L_i$ from $L$      apply $L_i$ to extend the solution $s$    until solution $s$ is completely constructed    return $s$end procedure</code></pre><h2 id="基于实例（Case-Based-Reasoning）"><a href="#基于实例（Case-Based-Reasoning）" class="headerlink" title="基于实例（Case-Based Reasoning）"></a>基于实例（Case-Based Reasoning）</h2>]]></content>
       
       
-      <categories>
-          
-          <category> 组合优化 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 超元启发式算法 </tag>
-            
-            <tag> 组合优化 </tag>
-            
-        </tags>
       
     </entry>
     
